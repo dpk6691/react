@@ -1,4 +1,4 @@
-const BtnContainer = () => {
+const BtnContainer = ({ btnclick }) => {
   const BtnTxt = [
     "C",
     "1",
@@ -22,7 +22,10 @@ const BtnContainer = () => {
   return (
     <div id="btn_container" class="mt-4 grid grid-cols-3 gap-3">
       {BtnTxt.map((buttonname) => (
-        <button className="bg-slate-500 text-xl w-full text-white p-2 rounded">
+        <button
+          onClick={btnclick}
+          className="bg-slate-400 text-xl w-full font-bold text-slate-900 p-2 rounded"
+        >
           {buttonname}
         </button>
       ))}

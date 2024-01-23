@@ -1,6 +1,12 @@
-const Display = () => {
+const Display = ({ disValue }) => {
   return (
-    <input className="w-full rounded p-2 text-lg" id="display" type="text" />
+    <input
+      className="w-full rounded text-right p-2 text-3xl"
+      id="display"
+      type="text"
+      value={disValue}
+      readOnly
+    />
   );
 };
 
