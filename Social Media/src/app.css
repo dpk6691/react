@@ -1,0 +1,9 @@
+.appflex {
+  display: flex;
+}
+.appcontent {
+  width: 100%;
+}
+.sidebar {
+  height: 100vh;
+}
