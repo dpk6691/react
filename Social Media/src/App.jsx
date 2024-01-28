@@ -6,12 +6,13 @@ import CreatePost from "./components/CreatePost";
 import PostList from "./components/PostList";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./app.css";
+import PostListProviders from "./store/PostListProviders";
 
 function App() {
   const [selectedTab, setSelectedTab] = useState("Home");
 
   return (
-    <>
+    <PostListProviders>
       <div className="appflex">
         <SideBar selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
         <div className="appcontent">
@@ -22,7 +23,7 @@ function App() {
           <Footer />
         </div>
       </div>
-    </>
+    </PostListProviders>
   );
 }
 
